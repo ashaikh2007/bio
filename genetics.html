@@ -1,0 +1,304 @@
+<head>
+    <style>
+        a {
+          position: relative;
+          color: #FAFAFC;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: #FAFAFC;
+        }
+        .header{
+            background-color: #333336;
+            width: 100%;
+    
+            
+        }
+        a::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #FAFAFC;
+          transform: scaleX(0);
+          transition: transform 0.3s ease;
+        }
+        a:hover::before {
+            transform: scaleX(1);
+        }
+        .header2{
+            width: fit-content;
+            margin: auto;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @font-face {
+            font-family: Mont;
+            src: url(SF-Pro-Rounded-Regular.otf);
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFC
+        }
+        .header_links{
+            font-size: 15px;
+            margin: 50px;
+            font-family: mont;
+            color: #FAFAFC;
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            font-family: mont;
+    
+    
+        }
+        h2{
+            font-size: 30px;
+            font-family: mont;
+        }
+        h3{
+            font-family: mont;
+        }
+        h4{
+            font-family: mont;
+        }
+        h5{
+            font-family: mont;
+        }
+        h6{
+            font-family: mont;
+        }
+        .content{
+            width: 70vw;
+            margin: auto;
+            
+        }
+
+        #dad, #mom{
+          width: 100px;
+          height: 20px;
+          border: 1px solid black;
+        }
+        p{
+          font-family: Raleway;
+          font-weight: 400;
+          font-size: 18px;
+        }
+        label{
+          font-weight: 200;
+          font-size: 16px;
+        }
+
+        #s2{
+          margin-left: 54px;
+          margin-top: -52px;
+        }
+        #s4{
+          margin-left: 54px;
+          margin-top: -52px;
+        }
+        button{
+          background-color: rgba(51, 51, 51, 0.8);
+          border-radius: 3px;
+          border: 1px solid rgba(23, 23, 23, 0.2);
+          box-shadow: 1px 0px 1px grey;
+        }
+        .hidden{
+            display: none;
+        }
+        .answer:hover + .hidden{
+            display: block;
+        }
+    
+    
+    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+        $(document).ready(function(){
+  $('#go').click(function(){
+    $('.del').remove();
+    var trait1d = $('#trait1').val();
+    var trait2d = $('#trait2').val();
+    var trait1m = $('#mtrait1').val();
+    var trait2m = $('#mtrait2').val();
+    
+    $('#s1').append("<span class = 'del'>"+ trait1d + trait1m + "</span>");
+    $('#s2').append("<span class = 'del'>"+ trait2d + trait1m + "</span>");
+    $('#s3').append("<span class = 'del'>"+ trait1d + trait2m + "</span>");
+    $('#s4').append("<span class = 'del'>"+ trait2d + trait2m + "</span>");
+  });
+  
+});
+    </script>
+    <title>Genetics</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header2">
+                <a class="header_links" href="index.html">Home</a>
+                <a class="header_links" href="diversity.html">Unit 1 - Diversity</a>
+                <a class="header_links" href="genetics.html">Unit 2 - Genetics</a>
+                <a class="header_links" href="animals.html">Unit 3 - Animals</a>
+                <a class="header_links" href="evolution.html">Unit 4 - Evolution</a>
+            </div>
+        </div>   
+    
+        <div class="content">
+            <h1>Genetics</h1>
+            <br>
+            <br>
+            <div style="display: flex; flex-direction: row;">
+                <h3>
+                    Your genes are what makes you, you! They are parts of your DNA that determine how certain proteins are produced. Each protein has its own purpose, such as determining eye color. Different genes give people differnet traits, and they are the reason why no two people are the same.
+                </h3>
+                <img style="width: 500px; margin-left: 150px;" src="https://c02.purpledshub.com/uploads/sites/41/2023/06/eye-colour-thumbnail-7d77859.jpg" alt="">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div style="display: flex; flex-direction: row;">
+                <img style="width: 600px;margin-right: 150px;" src="https://images.nagwa.com/figures/explainers/636128124616/2.svg" alt="">
+                <h3>
+                    DNA is made up of <u>nucleotides</u>. Each nucleotide is made up of 
+                    <ul>
+                        <h3><li>A nitrogen base (adenine, guanine, thymine, or cytosine)</li></h3>
+                        <h3><li>A sugar (deoxyribose)</li></h3>
+                        <h3><li>A phosphate group</li></h3>
+                    </ul>
+                    Each nucleotide has a pair. A <u>adenine</u> base nucleotide will have a <u>thymine</u> base pair, and a <u>guanine</u> base nucleotide will have a <u>cytosine</u> base pair. Sequences of nucleotides make up a single gene.
+                </h3>
+            </div>
+            <br>
+            <div style="display: flex; flex-direction: row;">
+                <h3>
+                    Genes are stored on sections of DNA. Long strands of DNA are wrapped around histone proteins and coiled to form <u>chromosomes.</u> Every cell contains chromosomes in its nucleus. 
+                </h3>
+                <img style="width: 700px;margin-left: 150px;" src="https://www.genome.gov/sites/default/files/media/images/tg/Chromosome.jpg" alt="">
+
+            </div>
+            
+            <br>
+            <br>
+            <h2 style="text-align: center;">So, how do people have different traits, such as different eye colors? Alleles!</h2>
+            <h3>Alleles are variations of a gene. Recall that genes are stored in DNA, which makes up a chromosome. Different chromosomes store different genes, and some genes, such as eye color, have multiple possible variations (alleles). These alleles are typically <u>inherited</u> from both parents.</h3>
+            <br>
+            <h2>Inheriting genes</h2>
+            <h3><li>Each parent has 2 alleles(variations) for each trait(eg. hair color). Each allele can be represented as either a capital or lowercase letter.</li> 
+                <li>A genotype is the genetic makeup of a certain trait. It is what the two alleles are. Examples of an organisms genotype for a trait are AA, aa, or Aa </li> 
+                <li>A phenotype is the physical features that show based on an orgamisms genotype for a certain trait</li> 
+                <li>A dominant allele is simply the variation of a trait that is expressed over another variation of the same trait. It is represented as a capital letter </li> 
+                <li>A recessive allele is simply the variation of a trait that is hidden when paired with a dominant allele </li> 
+                <li>When an orgamism has two dominant alleles for a given trait, it is said to be homozygous dominant. It will physically express the dominant allele</li> 
+                <li>When an orgamism has two recessive alleles for a given trait, it is said to be homozygous recessive. It will physically express the recessive allele</li> 
+                <li>When an orgamism has one dominant allele and one recessive allele for a given trait, it is said to be heterozygous. It will physically express the dominant allele over the recessive</li> 
+
+
+            </h3>
+            <img src="allele.jpg" alt="https://www.thoughtco.com/thmb/yDPbN_E3ki0HLZXTdwI-DzksKQ4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Allele-58a764533df78c345bd1f58b.jpg">
+            <br>
+            <h3>When traits are passed on, the offspring typically get one allele of each trait from each parent. For example, a dad with the alleles AA for hair color will pass on the A allele to its offspring. The mom with the alleles Aa for hair color would pass on either the A or a allele to its offspring. Combined, the offspring would have an AA or Aa alleles for hair color <br> What is this called? Mendelian Genetics!</h3>
+            <h2>Mendelian Genetics</h2>
+            <h3><li>Theorized by Gregor Mendel</li></h3>
+            <h3><li>Studied traits in garden pea plants</li></h3>
+            <h3><li>Observed that when there were two different alleles for a trait, one was dominant, while the other was recessive. The recessive on would only show if there wasn't a dominant trait</li></h3>
+            <h3><li>Mendels law of segregation states that inherited traits are determined by pairs of alleles (seen in example above)</li></h3>
+            <h3><li>Mendels principle of dominance states that the offspring of a parent with two dominant alleles(homozygous dominant) and a parent with two recessive alleles(homozygous recessive) will be express only the dominant trait(more info down below)</li></h3>
+
+            <h2>Mendelian Genetics using math</h2>
+            <div style="display: flex; flex-direction: row; justify-content: space-between;"> 
+                <h3>
+                    Using something called a punnet square, we can predict the offsprings genotype based on its parents' genotypes. It works by as putting each allele from each parent on its own and then combining them to predict the offpsrings genotype and phenotype. It results in 4 genotypes, each with a 25% chance of occuring in the offspring. Use the following interactive example to test this yourself. Pretend the alleles are for eye color. "B" is dominant brown, while "b" is recessive blue. Try some different combinations. Can you tell what phenotype each possible offspring will have?
+                    <div class="answer">Hover for answers</div>
+                    <div class="hidden">A BB genotype means brown eyes, a Bb genotype means brown eyes, a bb genotype means blue eyes</div>
+                </h3>       
+                <div style="margin-left: 45px; margin-right: 45px; width: 400px;" class="square">
+                    <p>Father: 
+                        <label for = 'trait1'>1</label>
+                      <select name = “trait1” id = 'trait1'>
+                      <option value = "B" selected>B</option>
+                      <option value = "b">b</option>
+                      </select>
+                        <label for = 'trait2'>2</label>
+                        <select name = “trait2” id = 'trait2'>
+                      <option value = "B" selected>B</option>
+                      <option value = "b">b</option>
+                      </select>
+
+
+
+                      </p>
+                      <p>Mother: 
+                    
+                        <label for = 'mtrait1'>1</label>
+                      <select name = “mtrait1” id = 'mtrait1'>
+                      <option value = "B" selected>B</option>
+                      <option value = "b">b</option>
+                      </select>
+
+                        <label for = 'mtrait2'>2</label>
+                      <select name = “mtrait2” id = 'mtrait2'>
+                      <option value = "B" selected>B</option>
+                      <option value = "b">b</option>
+                      </select>
+
+                      </p>
+
+                      <button id = 'go'>Press me to start</button>
+
+                      <div id = 's1' style="width: 50px; height: 50px;border: 1px solid black; font-size: 30px; font-family: Raleway;"></div>
+                      <div id = 's2' style="width: 50px; height: 50px;border: 1px solid black; font-size: 30px; font-family: Raleway;"></div>
+                      <div id = 's3' style="width: 50px; height: 50px;border: 1px solid black; font-size: 30px; font-family: Raleway;"></div>
+                      <div id = 's4' style="width: 50px; height: 50px;border: 1px solid black; font-size: 30px; font-family: Raleway;"></div>
+                </div>
+                <img src="https://www.shutterstock.com/image-illustration/simple-version-punnetts-square-260nw-2209580959.jpg" alt="">
+
+            </div>
+
+            <h2>
+                Non dominance of alleles
+            </h2>
+            <h3>
+                Sometimes, there won't be a dominant allele. Both alleles for a given trait will either <br>
+                <li>Blend (incomplete dominance)</li>
+                <li>Coexist (codominance)</li> 
+            </h3>
+            <br>
+            <h2>Incomplete dominance</h2>
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h3>Instead of a dominant and recessive allele, the alleles simply mix. One allele is represented as a capital letter (eg R) while the other is represented as the same capital letter but with an apostrophe (eg R'). For example, a red flower (RR) mixing with a white flower(R'R') creates a pink flower (RR'). Incomplete dominance follows the same rules as regular dominant/recessive alleles, the resulting phenotype is just different</h3>
+                <img src="https://cdn1.byjus.com/wp-content/uploads/2016/09/Incomplete-dominance-300x289.png" alt="">
+            </div>
+            <br>
+            <h2>Codominance</h2>
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+
+                <h3>Instead of a dominant and recessive allele, both alleles are dominant. As a result, both are expressed indepentently. Both alleles are represented as their own capital letter. Codominance follows the same rules as regular dominant/recessive alleles, the resulting phenotype is just different</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Co-dominance_in_Roan_Cattle.svg/512px-Co-dominance_in_Roan_Cattle.svg.png" alt="">
+            </div>
+            <h2>
+                Meiosis: The production of sperm and egg cells (gametes) 
+            </h2>
+            <h3>Meiosis is a similar process to mitosis. The goal is to create 4 genetically different gamete cells that are used to produce offspring. The parent cell has 23 chromosome pairs (diploid)</h3>
+            <img style="margin:auto; display: block;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Meiosis_Stages.svg/1100px-Meiosis_Stages.svg.png" alt="">
+            <h3>After interphase (<u>duplication</u> of the DNA), there are 8 steps to meiosis (use acronym PMAT)
+                <li>Prophase 1 - DNA condenses into chromosomes. Homologus chromosomes pair up. Homologus chromosomes are chromosomes that carry the same traits (eg both carry gene for eye color).Note that there are now <u>46</u> chromosome pairs. The homologus chromosome pairs swap alleles for each trait. This process is called crossing over</li>
+                <li>Metaphase 1 - Each homologus pair lines up in the middle. Spindle fibers attach at centromeres(center of each chromosome)</li>
+                <li>Anaphase 1 - Homologus chromosome pairs are pulled apart. The chromosomes are still intact and attached at the centromere</li>
+                <li>Telophase 1 + Cytokenisis - Cell splits in two. Two resulting cells only have 23 chromosomes (haploid), half of the parent cells chromosomes</li>
+                <li>Prophase 2 - Nuclear mebrane breaks apart. DNA does not duplicate again</li>
+                <li>Metaphase 1 - Chromosomes line up in middle. Spindle fibers attack to centromeres</li>
+                <li>Anaphase 2 - Chromosomes are pulled apart to opposite ends. Turns 23 chromosomes into 46 chromatids</li>
+                <li>Telophase 2 - Nulcear membrane forms around chromatids, and spindle fibers dissapear</li>
+                <li>Cytokenisis 2 - Cell physically splits. Results in 4 cells, all of which have 23 single strand chromosomes. Cells are all haploid (have 23 single strand chromosomes)</li>
+
+            </h3>
+        </div>
+    </body>
